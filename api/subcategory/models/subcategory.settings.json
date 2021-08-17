@@ -28,6 +28,10 @@
     "category": {
       "model": "category",
       "via": "subcategories"
+    },
+    "posts": {
+      "via": "subcategory",
+      "collection": "post"
     }
   }
 }
