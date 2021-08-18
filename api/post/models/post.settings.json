@@ -23,6 +23,16 @@
     "subcategory": {
       "model": "subcategory",
       "via": "posts"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
