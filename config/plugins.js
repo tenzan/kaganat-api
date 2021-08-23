@@ -12,9 +12,11 @@ module.exports = ({ env }) => ({
     provider: "mailgun",
     providerOptions: {
       apiKey: env("MAILGUN_API_KEY"),
+      domain: env("MAILGUN_DOMAIN"),
+      host: env("MAILGUN_HOST"),
     },
     settings: {
-      defaultFrom: "no-reply@mg.kaganat.com",
+      defaultFrom: env("DEFAULT_FROM_EMAIL"),
     },
   },
 });
